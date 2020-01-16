@@ -19,7 +19,7 @@ public class SchoolController {
         return "school_get_all";
     }
 
-    @GetMapping("/school")
+    @GetMapping("/school-Id")
     public String getById(Model model, @RequestParam Long id) {
 
         model.addAttribute("school", repository.findById(id));

@@ -19,7 +19,7 @@ public class WizardController {
         return "wizard_get_all";
     }
 
-    @GetMapping("/wizard")
+    @GetMapping("/wizard-Id")
     public String getById(Model model, @RequestParam Long id) {
 
         model.addAttribute("wizard", repository.findById(id));
